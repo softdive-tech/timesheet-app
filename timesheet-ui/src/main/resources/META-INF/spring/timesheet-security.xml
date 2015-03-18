@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean id="loginRealm" class="com.softdive.madpiggy.ui.MadpiggyRealm"/>
+
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realms">
+			<util:list>
+				<ref bean="loginRealm" />
+			</util:list>
+		</property>
+		<!-- <property name="rememberMeManager">
+			<bean class="com.softdive.madpiggy.ui.MadpiggyRememeberMeManager"/>
+		</property> -->
+	</bean>
+
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		<property name="loginUrl" value="/login"/>
+		<property name="successUrl" value="/dashboard"/>
+		<property name="filters">
+			<util:map>
+				<entry key="authc">
+					<bean class="com.softdive.madpiggy.ui.FormAuthFilter">
+						<property name="successUrl" value="/dashboard"/>
+					</bean>
+				</entry>
+			</util:map>
+		</property>
+		<property name="filterChainDefinitions">
+			<value>
+				/m/** = authc, roles[MERCHANT]
+				/madpiggyadmin/** = authc, roles[ADMIN]
+				/mall/** = authc, roles[MALL_USER]
+				/merchant/**=authc, roles[MERCHANT]
+				/pmerchant/**=authc, roles[PREMIUM_MERCHANT]
+				/a/** = authc, roles[ADMIN]
+				/p/** = authc
+				/login = authc
+				/** = anon
+			</value>
+		</property>
+	</bean>
+
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
+
+</beans>

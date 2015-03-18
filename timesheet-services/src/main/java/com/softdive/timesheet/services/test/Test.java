@@ -12,15 +12,15 @@ public class Test {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext(
 				"classpath:META-INF/spring/timesheet-services.xml");
 		UserService userService = applicationContext.getBean(UserService.class);
-		User user = new User();
-		user.setId(1);
-		user.setName("lovesh");
-		user.setMobile("9650072863");
-		try {
-			userService.createUser(user);
-		} catch (ApplicationException e) {
-			System.out.println(e.getMessage());
-		}
+//		User user = new User();
+//		user.setId(1);
+//		user.setName("lovesh");
+//		user.setMobile("9650072863");
+//		try {
+//			userService.createUser(user);
+//		} catch (ApplicationException e) {
+//			System.out.println(e.getMessage());
+//		}
 
 	}
 }
