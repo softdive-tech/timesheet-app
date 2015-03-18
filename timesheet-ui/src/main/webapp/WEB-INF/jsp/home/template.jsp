@@ -26,9 +26,5 @@
 	</div> 
   </div>
 </main>
- <%-- <footer class="footer-copyright">
- <div class="container">
-	<jsp:include page="../fragments/footer.jsp" />
-</footer> --%>
 </body>
 </html>
