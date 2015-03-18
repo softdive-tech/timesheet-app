@@ -22,16 +22,7 @@
             </ul>
           </div>
         </div>
-     <h3>TIMESHEET</h3>
- 	 <form id="login_form" action="${TIMESHEET_CTX}/login" method="post">
-	 <input type="text" name="username" id="userId" autofocus>
-	 <input type="password" name="password" id="password">
-	 <div class="input-field col s6">
-        <input id="first_name" type="text" class="validate">
-        <label for="first_name">First Name</label>
-      </div>
-    <button type="submit" class="waves-effect waves-light btn red darken-1 col s6 offset-s3" id="login">Login</button>
-	</form>
+        <!-- insert content body here -->
 	</div> 
   </div>
 </main>

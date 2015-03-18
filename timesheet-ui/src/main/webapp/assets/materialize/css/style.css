@@ -1,0 +1,249 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.p-0{padding:0px !important;}
+.m-0{ margin:0px !important;}
+.text-white{ color:#fff;}
+.mt-0{ margin-top:0px;}
+.bg-gray{ background-color:#f8f8f8;}
+.position{ position:relative; height:100%; right:0px;}
+.border-bottom{ border-bottom:1px solid #666; margin-bottom:15px;}
+.p-5{ padding:0 5px;}
+.pt-10{ padding-top:11px !important;}
+.p-l-0{ padding-left:0px;}
+.clear{ clear:both}
+.sm-font{ font-size:.9em;}
+.text-center{ text-align:center;}
+.m-5{ margin:5px;}
+.ra-5{ border-radius:5px;}
+.shadow-right{box-shadow: 2px 0 6px 0 rgba(0,0,0,0.1);position: relative; background-color:#fff; position:relative; z-index:1;}
+.sidebar-block:first-child {
+border-top: 0;
+}
+
+.sidebar-block {
+border-bottom: 1px solid #dfdfdf;
+border-top: 0 none;
+padding: 40px 24px 20px 22px;
+position: relative;
+}
+.sidebar-block.sidebar-actions {
+border-bottom: 0;
+cursor: pointer;
+padding: 0;
+}
+.sidebar-block.sidebar-actions .sidebar-action {
+background-image: -moz-linear-gradient(top,#ffffff 0%,#ffffff 70%,#f7f7f7 100%);
+background-image: -webkit-linear-gradient(top,#ffffff 0%,#ffffff 70%,#f7f7f7 100%);
+background-image: linear-gradient(to bottom,#ffffff 0%,#ffffff 70%,#f7f7f7 100%);
+background-color: #fff;
+border-bottom: 1px solid #dfdfdf;
+color: #0054ff;
+display: block;
+font-size: 13px;
+overflow: hidden;
+padding: 12px 0 12px 20px;
+padding-left: 20px;
+}
+.object-stats {
+
+color: #333;
+
+}
+.project-stat {
+line-height: 24px;
+font-size:12px;
+font-weight:700;
+}
+.line-height{ }
+.company-logo{ min-width:40px; width:100%; max-width:60px !important; display:block; margin:0 auto;}
+.p-a-5{ padding:5px !important;}
+.float-r-left{}
+.text-small{ font-size:15px !important;}
+.font-bold{ font-weight:400;}
+.stat-value {
+float: right;
+font-size: 15px;
+font-weight: bold;
+}
+.icon-b{ font-size:1.5em; float:left; margin-right:10px;}
+.text-ellipsis {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.font_normal{ font-weight:normal !important;}
+.object-tag {
+background: #df3245;
+
+border: 1px solid #c7c7c7;
+border-radius: 3px;
+
+color: #fff;
+cursor: pointer;
+float: left;
+margin: 0 7px 7px 0;
+padding: 0px 9px;
+text-transform: lowercase;
+-moz-user-select: none;
+-webkit-user-select: none;
+font-size:13px;
+}
+.p-l-0{ padding-left:0px !important;}
+.com-time{ color: #ccc;
+font-size: 12px;
+line-height: 20px;
+margin-left: 10px;}
+.com-im{ height:50px !important; width:50px !important; display:block; margin:0 auto !important;}
+.com-bg{ background-color:#fcfcfc; padding:15px 10px !important;}
+.m-t-20{ margin-top:20px;}
+.com-box{ border-bottom:1px solid #f4f4f4; padding:20px 0px;}
+.log_sha{-webkit-box-shadow: 0 4px 6px -6px black;
+	   -moz-box-shadow: 0 4px 6px -6px black;
+	        box-shadow: 0 4px 6px -6px black;
+			padding-left:10px; padding-bottom:10px;}
+.load-more{ margin-top:25px;}
+.left_height{ border-left:1px solid #ececec;}
+.bg-back{ background-image:url(../images/bg-gr.jpg) !important; background-repeat:repeat-y;}
+
+@media only screen and (min-width: 320px) {
+.line-height{ line-height:normal !important; font-size:2.2em}
+.float-r-left{ float:left;}
+.ptb-r-15{ padding:0px !important;}
+.bg-back{ background-image:none !important;}
+	
+}
+.ptb-r-15{ padding:15px 0px;}
+@media only screen and (min-width: 384px) {
+	
+	
+}
+@media only screen and (min-width: 480px) {
+.ptb-r-15{ padding:0px !important;}
+.left_height{ border-left: 1px solid #ececec;}
+.bg-back{ background-image:none !important;}	
+}
+
+@media only screen and (min-width: 758px) {
+.ptb-r-15{ padding:15px !important;}
+.left_height{ border-left: 1px solid #ececec;}
+.bg-back{ background-image:url(../images/bg-gr.jpg) !important; background-repeat:repeat-y;background-size: cover;}
+}
+
+
+/*Slider CSS*/
+.rg-image-wrapper{
+ position:relative;
+ padding:20px 30px;
+ /*background:transparent url(../images/black.png) repeat top left;*/
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+ min-height:20px;
+ margin-bottom: 60px;
+}
+.rg-gallery{ position:relative;}
+.rg-image{
+ position:relative;
+ text-align:center;
+ line-height:0px;
+}
+.rg-image img{
+ height:440px;
+ max-width:100%;
+}
+.rg-image-nav a{
+ position:absolute;
+ top:0px;
+ left:0px;
+ background: url(../images/nav.png) no-repeat -20% 50%;
+ width:28px;
+ height:100%;
+ text-indent:-9000px;
+ cursor:pointer;
+ opacity:0.3;
+ outline:none;
+ -moz-border-radius: 10px 0px 0px 10px;
+ -webkit-border-radius: 10px 0px 0px 10px;
+ border-radius: 10px 0px 0px 10px;
+}
+.rg-image-nav a.rg-image-nav-next{
+ right:0px;
+ left:auto;
+ background-position:115% 50%;
+ -moz-border-radius: 0px 10px 10px 0px;
+ -webkit-border-radius: 0px 10px 10px 0px;
+ border-radius: 0px 10px 10px 0px;
+}
+.rg-image-nav a:hover{
+ opacity:0.8;
+}
+.rg-caption {
+ text-align:center;
+ margin-top:15px;
+ position:relative;
+}
+.rg-caption p{
+ font-size:11px;
+ letter-spacing:2px;
+ font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
+ line-height:16px;
+ padding:0 15px;
+ text-transform:uppercase;
+}
+.rg-view{
+ height:30px;
+ display:none;
+}
+.rg-view a{
+ display:block;
+ float:right;
+ width:16px;
+ height:16px;
+ margin-right:3px;
+ background:#464646 url(../images/views.png) no-repeat top left;
+ border:3px solid #464646;
+ opacity:0.8;
+}
+.rg-view a:hover{
+ opacity:1.0;
+}
+.rg-view a.rg-view-full{
+ background-position:0px 0px;
+}
+.rg-view a.rg-view-selected{
+ background-color:#6f6f6f;
+ border-color:#6f6f6f;
+}
+.rg-view a.rg-view-thumbs{
+ background-position:0px -16px;
+}
+.rg-loading{
+ width:46px;
+ height:46px;
+ position:absolute;
+ top:50%;
+ left:50%;
+ background:#000 url(../images/ajax-loader.gif) no-repeat center center;
+ margin:-23px 0px 0px -23px;
+ z-index:100;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+ opacity:0.7;
+}
+.rg-thumbs{
+position: absolute;
+bottom: -80px;
+width: 90%;}
+
+
+.cross{ position: absolute; right:5px; top:5px; z-index: 5; color: #fff; width:12px; height:12px;}
