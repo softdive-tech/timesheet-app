@@ -1,3 +1,3 @@
 # timesheet-app
 Timesheet Application
-IN- house product
+An application to train the developers and make them used to of web app implementation.
